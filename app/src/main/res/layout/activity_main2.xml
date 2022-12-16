@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Picked images will be shown here-->
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+    <!--Show previous image in ImageSwitcher clicking this button-->
+    <Button
+        android:id="@+id/previous_Button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSwitcher"
+        android:text="@string/previous" />
+    <!--Show next image in ImageSwitcher clicking this button-->
+    <Button
+        android:id="@+id/next_Button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSwitcher"
+        android:layout_alignParentEnd="true"
+        android:text="@string/next" />
+    <!--Pick images clicking this button-->
+    <Button
+        android:id="@+id/pickImages_Button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/pickimage" />
+
+</RelativeLayout>
